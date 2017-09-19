@@ -18,13 +18,13 @@ elsif user_input == "no"
     user_input_comedy = gets.chomp.strip
 
   if user_input_comedy == "yes" && user_input_drama == "yes"
-    puts "Good taste! Here's a dramedy you'd like: Groundhog Day"
+    puts "Good taste! Here's a dramedy you'd like: #{dramedy}"
 
   elsif user_input_drama == "yes"
-    puts "Well if you enjoy dramas, here's an excellent one: City of God"
+    puts "Well if you enjoy dramas, here's an excellent one: #{drama}"
 
   elsif user_input_comedy == "yes"
-    puts "I like comedies too! Here's one of my favorites: Tropic Thunder"
+    puts "I like comedies too! Here's one of my favorites: #{comedy}"
 
   else
     puts "Well do you like to read at least? Here's a good book: The Alchemist"

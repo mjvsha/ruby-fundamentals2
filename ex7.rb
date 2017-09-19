@@ -1,10 +1,10 @@
-#why doesnt this work
+
 
 def wrap_text(arg1, arg2)
   return "#{arg2}#{arg1}#{arg2.reverse}"
 end
 
-
+=begin
 #why doesnt this work
 
 def wrap_text(arg1, arg2)
@@ -40,3 +40,5 @@ puts "#{result_1}#{result_2}"
 # scope defines from which functions the variable may be accessed
 # local variavbles = from function
 #glocal variable => declred outside of function so anyone can access it
+
+=end

@@ -1,7 +1,3 @@
-puts "How far did person 1 run (in metres)?"
-distance1 = gets.to_f
-puts "How long (in minutes) did person 1 run take to run #{distance1} metres?"
-mins1 = gets.to_f
 
 
 #this program is asking 3 people for the distance they ran in meters
@@ -10,50 +6,82 @@ mins1 = gets.to_f
 #and then it calculates the speed in m/s
 #and then itdoes an if/else statement to determine who was the fstest
 
-puts "How far did person 1 run?"
-person1 = gets.chomp.strip.to_f
+
+
+meters1 = ask_meters()
+meters2= ask_meters()
+meters3 = ask_meters()
+
+minutes1 = ask_mins()
+minutes2 = ask_mins()
+minutes3 = ask_mins()
+
+
 
 puts "How many minutes did it take?"
-minutes1= gets.chomp.strip.to_f
+  minutes1= gets.chomp.strip.to_f
 
-seconds1=to_seconds(minutes1)
+    seconds1=to_seconds(minutes1)
 #call to_seconds
-
-
-
 
 
 puts "How far did person 2 run?"
-person2 = gets.chomp.strip.to_f
+  meters2 = gets.chomp.strip.to_f
 
 puts "How many minutes did it take?"
-minutes2= gets.chomp.strip.to_f
+  minutes2= gets.chomp.strip.to_f
 
 #call to_seconds
-seconds2=to_seconds(minutes2)
-
+    seconds2=to_seconds(minutes2)
 
 
 
 puts "How far did person 3 run?"
-person3 = gets.chomp.strip.to_f
+  meters3= gets.chomp.strip.to_f
 
 puts "How many minutes did it take?"
-minutes3= gets.chomp.strip.to_f
+  minutes3= gets.chomp.strip.to_f
 
 #call to_seconds, store in var
 
-seconds3=to_seconds(minutes3)
+    seconds3=to_seconds(minutes3)
 
 #call speed, store in var
-
-
-
+#CONVERT PERSON1'S DISTANCE TO M/S
 speed1= speed(meters1, seconds1)
+#CONVERT PERSON2'S DISTANCE TO M/S
 speed2= speed(meters2, seconds2)
+#CONVERT PERSON 3'S DISTANCE TO M/S
 speed3= speed(meters3, seconds3)
 
 
+
+
+
+
+
+
+
+#METHODS
+
+#ASK FOR PERSON'S DISTANCE IN METERS
+
+
+def ask_meters()
+
+  puts "How far did you run in meters?"
+  return gets.chomp.strip.to_f
+
+end
+
+
+#ASK FOR HOW LONG THE PERSON TOOK IN METERS
+
+def ask_mins()
+
+  puts "How long did it take you to run those meters in minutes?"
+  return gets.chomp.strip.to_f
+end
 
 
 #CONVERT MINUTES TO SECONDS
